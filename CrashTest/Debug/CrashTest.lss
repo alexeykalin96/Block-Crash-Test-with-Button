@@ -1,0 +1,381 @@
+
+CrashTest.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000020a  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .bss          00000003  00800200  00800200  0000027e  2**0
+                  ALLOC
+  2 .comment      00000030  00000000  00000000  0000027e  2**0
+                  CONTENTS, READONLY
+  3 .debug_aranges 00000038  00000000  00000000  000002ae  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   000002f4  00000000  00000000  000002e6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 0000014b  00000000  00000000  000005da  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   0000027a  00000000  00000000  00000725  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000068  00000000  00000000  000009a0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    000001e8  00000000  00000000  00000a08  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    0000007e  00000000  00000000  00000bf0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000028  00000000  00000000  00000c6e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	65 c0       	rjmp	.+202    	; 0xcc <__ctors_end>
+   2:	00 00       	nop
+   4:	75 c0       	rjmp	.+234    	; 0xf0 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	73 c0       	rjmp	.+230    	; 0xf0 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	71 c0       	rjmp	.+226    	; 0xf0 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	6f c0       	rjmp	.+222    	; 0xf0 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	6d c0       	rjmp	.+218    	; 0xf0 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	6b c0       	rjmp	.+214    	; 0xf0 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	69 c0       	rjmp	.+210    	; 0xf0 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	67 c0       	rjmp	.+206    	; 0xf0 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	65 c0       	rjmp	.+202    	; 0xf0 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	63 c0       	rjmp	.+198    	; 0xf0 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	61 c0       	rjmp	.+194    	; 0xf0 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	5f c0       	rjmp	.+190    	; 0xf0 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	5d c0       	rjmp	.+186    	; 0xf0 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	5b c0       	rjmp	.+182    	; 0xf0 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	59 c0       	rjmp	.+178    	; 0xf0 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	57 c0       	rjmp	.+174    	; 0xf0 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	55 c0       	rjmp	.+170    	; 0xf0 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	53 c0       	rjmp	.+166    	; 0xf0 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	51 c0       	rjmp	.+162    	; 0xf0 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	4f c0       	rjmp	.+158    	; 0xf0 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	4d c0       	rjmp	.+154    	; 0xf0 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	4b c0       	rjmp	.+150    	; 0xf0 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	4a c0       	rjmp	.+148    	; 0xf2 <__vector_23>
+  5e:	00 00       	nop
+  60:	47 c0       	rjmp	.+142    	; 0xf0 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	45 c0       	rjmp	.+138    	; 0xf0 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	43 c0       	rjmp	.+134    	; 0xf0 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	41 c0       	rjmp	.+130    	; 0xf0 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	3f c0       	rjmp	.+126    	; 0xf0 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	3d c0       	rjmp	.+122    	; 0xf0 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	3b c0       	rjmp	.+118    	; 0xf0 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	39 c0       	rjmp	.+114    	; 0xf0 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	37 c0       	rjmp	.+110    	; 0xf0 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	35 c0       	rjmp	.+106    	; 0xf0 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	33 c0       	rjmp	.+102    	; 0xf0 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	31 c0       	rjmp	.+98     	; 0xf0 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	2f c0       	rjmp	.+94     	; 0xf0 <__bad_interrupt>
+  92:	00 00       	nop
+  94:	2d c0       	rjmp	.+90     	; 0xf0 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	2b c0       	rjmp	.+86     	; 0xf0 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	29 c0       	rjmp	.+82     	; 0xf0 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	27 c0       	rjmp	.+78     	; 0xf0 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	25 c0       	rjmp	.+74     	; 0xf0 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	23 c0       	rjmp	.+70     	; 0xf0 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	21 c0       	rjmp	.+66     	; 0xf0 <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	1f c0       	rjmp	.+62     	; 0xf0 <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	1d c0       	rjmp	.+58     	; 0xf0 <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	1b c0       	rjmp	.+54     	; 0xf0 <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	19 c0       	rjmp	.+50     	; 0xf0 <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	17 c0       	rjmp	.+46     	; 0xf0 <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	15 c0       	rjmp	.+42     	; 0xf0 <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	13 c0       	rjmp	.+38     	; 0xf0 <__bad_interrupt>
+	...
+
+000000cc <__ctors_end>:
+  cc:	11 24       	eor	r1, r1
+  ce:	1f be       	out	0x3f, r1	; 63
+  d0:	cf ef       	ldi	r28, 0xFF	; 255
+  d2:	d1 e2       	ldi	r29, 0x21	; 33
+  d4:	de bf       	out	0x3e, r29	; 62
+  d6:	cd bf       	out	0x3d, r28	; 61
+  d8:	00 e0       	ldi	r16, 0x00	; 0
+  da:	0c bf       	out	0x3c, r16	; 60
+
+000000dc <__do_clear_bss>:
+  dc:	22 e0       	ldi	r18, 0x02	; 2
+  de:	a0 e0       	ldi	r26, 0x00	; 0
+  e0:	b2 e0       	ldi	r27, 0x02	; 2
+  e2:	01 c0       	rjmp	.+2      	; 0xe6 <.do_clear_bss_start>
+
+000000e4 <.do_clear_bss_loop>:
+  e4:	1d 92       	st	X+, r1
+
+000000e6 <.do_clear_bss_start>:
+  e6:	a3 30       	cpi	r26, 0x03	; 3
+  e8:	b2 07       	cpc	r27, r18
+  ea:	e1 f7       	brne	.-8      	; 0xe4 <.do_clear_bss_loop>
+  ec:	3c d0       	rcall	.+120    	; 0x166 <main>
+  ee:	8b c0       	rjmp	.+278    	; 0x206 <_exit>
+
+000000f0 <__bad_interrupt>:
+  f0:	87 cf       	rjmp	.-242    	; 0x0 <__vectors>
+
+000000f2 <__vector_23>:
+
+uint16_t timer0 = 0;
+bool IsButtonPressed = false;
+
+ISR(TIMER0_OVF_vect)
+{
+  f2:	1f 92       	push	r1
+  f4:	0f 92       	push	r0
+  f6:	0f b6       	in	r0, 0x3f	; 63
+  f8:	0f 92       	push	r0
+  fa:	11 24       	eor	r1, r1
+  fc:	8f 93       	push	r24
+  fe:	9f 93       	push	r25
+	if((BUTTON_PIN & (1 << BUTTON_IN)) == (1 << BUTTON_IN))
+ 100:	02 9b       	sbis	0x00, 2	; 0
+ 102:	0a c0       	rjmp	.+20     	; 0x118 <__vector_23+0x26>
+	{
+		timer0++;
+ 104:	80 91 01 02 	lds	r24, 0x0201
+ 108:	90 91 02 02 	lds	r25, 0x0202
+ 10c:	01 96       	adiw	r24, 0x01	; 1
+ 10e:	90 93 02 02 	sts	0x0202, r25
+ 112:	80 93 01 02 	sts	0x0201, r24
+ 116:	07 c0       	rjmp	.+14     	; 0x126 <__vector_23+0x34>
+	}
+	else if((BUTTON_PIN & (1 << BUTTON_IN)) == (0 << BUTTON_IN))
+ 118:	02 99       	sbic	0x00, 2	; 0
+ 11a:	05 c0       	rjmp	.+10     	; 0x126 <__vector_23+0x34>
+	{
+		timer0 = 0;
+ 11c:	10 92 02 02 	sts	0x0202, r1
+ 120:	10 92 01 02 	sts	0x0201, r1
+ 124:	0d c0       	rjmp	.+26     	; 0x140 <__vector_23+0x4e>
+	}
+	if(timer0 > 10)
+ 126:	80 91 01 02 	lds	r24, 0x0201
+ 12a:	90 91 02 02 	lds	r25, 0x0202
+ 12e:	0b 97       	sbiw	r24, 0x0b	; 11
+ 130:	38 f0       	brcs	.+14     	; 0x140 <__vector_23+0x4e>
+	{
+		IsButtonPressed = true;
+ 132:	81 e0       	ldi	r24, 0x01	; 1
+ 134:	80 93 00 02 	sts	0x0200, r24
+		timer0 = 0;
+ 138:	10 92 02 02 	sts	0x0202, r1
+ 13c:	10 92 01 02 	sts	0x0201, r1
+	}
+}
+ 140:	9f 91       	pop	r25
+ 142:	8f 91       	pop	r24
+ 144:	0f 90       	pop	r0
+ 146:	0f be       	out	0x3f, r0	; 63
+ 148:	0f 90       	pop	r0
+ 14a:	1f 90       	pop	r1
+ 14c:	18 95       	reti
+
+0000014e <_Z9InitPortsv>:
+
+void InitPorts(void)
+{
+	TRANSISTORS_DDR |= (1 << TRANSISTOR1_OUT)|(1 << TRANSISTOR2_OUT);
+ 14e:	87 b1       	in	r24, 0x07	; 7
+ 150:	83 60       	ori	r24, 0x03	; 3
+ 152:	87 b9       	out	0x07, r24	; 7
+	TRANSISTORS_PORT &= ~(1 << TRANSISTOR1_OUT)|(1 << TRANSISTOR2_OUT);
+ 154:	40 98       	cbi	0x08, 0	; 8
+	BUTTON_DDR &= ~(1 << BUTTON_IN);
+ 156:	0a 98       	cbi	0x01, 2	; 1
+ 158:	08 95       	ret
+
+0000015a <_Z10InitTimer0v>:
+}
+
+void InitTimer0(void)
+{
+	TCCR0B = (1 << CS02)|(0 << CS01)|(1 << CS00);
+ 15a:	85 e0       	ldi	r24, 0x05	; 5
+ 15c:	85 bd       	out	0x25, r24	; 37
+	TIMSK0 = (1 << TOIE0);
+ 15e:	81 e0       	ldi	r24, 0x01	; 1
+ 160:	80 93 6e 00 	sts	0x006E, r24
+ 164:	08 95       	ret
+
+00000166 <main>:
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 166:	2f ef       	ldi	r18, 0xFF	; 255
+ 168:	3f e7       	ldi	r19, 0x7F	; 127
+ 16a:	44 e0       	ldi	r20, 0x04	; 4
+ 16c:	21 50       	subi	r18, 0x01	; 1
+ 16e:	30 40       	sbci	r19, 0x00	; 0
+ 170:	40 40       	sbci	r20, 0x00	; 0
+ 172:	e1 f7       	brne	.-8      	; 0x16c <main+0x6>
+ 174:	00 c0       	rjmp	.+0      	; 0x176 <main+0x10>
+ 176:	00 00       	nop
+}
+
+int main(void)
+{
+	_delay_ms(100);
+	InitPorts();
+ 178:	ea df       	rcall	.-44     	; 0x14e <_Z9InitPortsv>
+	InitTimer0();
+ 17a:	ef df       	rcall	.-34     	; 0x15a <_Z10InitTimer0v>
+	
+	sei();
+ 17c:	78 94       	sei
+
+	while(1)
+	{
+		_delay_ms(100);
+		if(IsButtonPressed == true)
+ 17e:	9a e0       	ldi	r25, 0x0A	; 10
+ 180:	5f ef       	ldi	r21, 0xFF	; 255
+ 182:	8f e7       	ldi	r24, 0x7F	; 127
+ 184:	24 e0       	ldi	r18, 0x04	; 4
+ 186:	51 50       	subi	r21, 0x01	; 1
+ 188:	80 40       	sbci	r24, 0x00	; 0
+ 18a:	20 40       	sbci	r18, 0x00	; 0
+ 18c:	e1 f7       	brne	.-8      	; 0x186 <main+0x20>
+ 18e:	00 c0       	rjmp	.+0      	; 0x190 <main+0x2a>
+ 190:	00 00       	nop
+ 192:	80 91 00 02 	lds	r24, 0x0200
+ 196:	88 23       	and	r24, r24
+ 198:	99 f3       	breq	.-26     	; 0x180 <main+0x1a>
+ 19a:	89 2f       	mov	r24, r25
+		{
+			for(uint8_t i = 0; i < 10; i++)
+			{
+				//open
+				TRANSISTORS_PORT &= ~(1 << TRANSISTOR1_OUT);
+ 19c:	40 98       	cbi	0x08, 0	; 8
+				TRANSISTORS_PORT |= (1 << TRANSISTOR2_OUT);
+ 19e:	41 9a       	sbi	0x08, 1	; 8
+ 1a0:	3f ef       	ldi	r19, 0xFF	; 255
+ 1a2:	4f ef       	ldi	r20, 0xFF	; 255
+ 1a4:	54 e6       	ldi	r21, 0x64	; 100
+ 1a6:	24 e0       	ldi	r18, 0x04	; 4
+ 1a8:	31 50       	subi	r19, 0x01	; 1
+ 1aa:	40 40       	sbci	r20, 0x00	; 0
+ 1ac:	50 40       	sbci	r21, 0x00	; 0
+ 1ae:	20 40       	sbci	r18, 0x00	; 0
+ 1b0:	d9 f7       	brne	.-10     	; 0x1a8 <main+0x42>
+ 1b2:	00 c0       	rjmp	.+0      	; 0x1b4 <main+0x4e>
+ 1b4:	00 00       	nop
+				_delay_ms(30000);
+				TRANSISTORS_PORT &= ~(1 << TRANSISTOR1_OUT);
+ 1b6:	40 98       	cbi	0x08, 0	; 8
+				TRANSISTORS_PORT &= ~(1 << TRANSISTOR2_OUT);
+ 1b8:	41 98       	cbi	0x08, 1	; 8
+ 1ba:	3f ef       	ldi	r19, 0xFF	; 255
+ 1bc:	4f ef       	ldi	r20, 0xFF	; 255
+ 1be:	50 ee       	ldi	r21, 0xE0	; 224
+ 1c0:	31 50       	subi	r19, 0x01	; 1
+ 1c2:	40 40       	sbci	r20, 0x00	; 0
+ 1c4:	50 40       	sbci	r21, 0x00	; 0
+ 1c6:	e1 f7       	brne	.-8      	; 0x1c0 <main+0x5a>
+ 1c8:	00 c0       	rjmp	.+0      	; 0x1ca <main+0x64>
+ 1ca:	00 00       	nop
+				_delay_ms(5000);
+				
+				//close
+				TRANSISTORS_PORT &= ~(1 << TRANSISTOR2_OUT);
+ 1cc:	41 98       	cbi	0x08, 1	; 8
+				TRANSISTORS_PORT |= (1 << TRANSISTOR1_OUT);
+ 1ce:	40 9a       	sbi	0x08, 0	; 8
+ 1d0:	2f ef       	ldi	r18, 0xFF	; 255
+ 1d2:	3f ef       	ldi	r19, 0xFF	; 255
+ 1d4:	44 e6       	ldi	r20, 0x64	; 100
+ 1d6:	54 e0       	ldi	r21, 0x04	; 4
+ 1d8:	21 50       	subi	r18, 0x01	; 1
+ 1da:	30 40       	sbci	r19, 0x00	; 0
+ 1dc:	40 40       	sbci	r20, 0x00	; 0
+ 1de:	50 40       	sbci	r21, 0x00	; 0
+ 1e0:	d9 f7       	brne	.-10     	; 0x1d8 <main+0x72>
+ 1e2:	00 c0       	rjmp	.+0      	; 0x1e4 <main+0x7e>
+ 1e4:	00 00       	nop
+				_delay_ms(30000);
+				TRANSISTORS_PORT &= ~(1 << TRANSISTOR1_OUT);
+ 1e6:	40 98       	cbi	0x08, 0	; 8
+				TRANSISTORS_PORT &= ~(1 << TRANSISTOR2_OUT);
+ 1e8:	41 98       	cbi	0x08, 1	; 8
+ 1ea:	2f ef       	ldi	r18, 0xFF	; 255
+ 1ec:	3f ef       	ldi	r19, 0xFF	; 255
+ 1ee:	40 ee       	ldi	r20, 0xE0	; 224
+ 1f0:	21 50       	subi	r18, 0x01	; 1
+ 1f2:	30 40       	sbci	r19, 0x00	; 0
+ 1f4:	40 40       	sbci	r20, 0x00	; 0
+ 1f6:	e1 f7       	brne	.-8      	; 0x1f0 <main+0x8a>
+ 1f8:	00 c0       	rjmp	.+0      	; 0x1fa <main+0x94>
+ 1fa:	00 00       	nop
+ 1fc:	81 50       	subi	r24, 0x01	; 1
+	while(1)
+	{
+		_delay_ms(100);
+		if(IsButtonPressed == true)
+		{
+			for(uint8_t i = 0; i < 10; i++)
+ 1fe:	71 f6       	brne	.-100    	; 0x19c <main+0x36>
+				TRANSISTORS_PORT &= ~(1 << TRANSISTOR1_OUT);
+				TRANSISTORS_PORT &= ~(1 << TRANSISTOR2_OUT);
+				_delay_ms(5000);
+			}
+			
+			IsButtonPressed = false;
+ 200:	10 92 00 02 	sts	0x0200, r1
+ 204:	bd cf       	rjmp	.-134    	; 0x180 <main+0x1a>
+
+00000206 <_exit>:
+ 206:	f8 94       	cli
+
+00000208 <__stop_program>:
+ 208:	ff cf       	rjmp	.-2      	; 0x208 <__stop_program>
